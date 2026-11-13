@@ -22,6 +22,15 @@ HTML, CSS and vanilla JavaScript, with a lightweight 3D scene (three.js). Self-h
 - No backend, no database and no forms, so there is no customer data to leak. Ordering happens in WhatsApp.
 - Reviewed for exposed keys and personal data before this showcase was published.
 
+## Issues encountered & how I solved them
+- **Most customers are on budget phones and mobile data**, so an "immersive" animated ocean hero risked being the thing that drove people away. I kept the 3D scene (three.js) deliberately lightweight and self-hosted the fonts so the page still loads fast on a weak connection.
+- **The shop had no digital presence to build search visibility from.** I added local-business structured data (menu, hours, address), a sitemap and descriptive metadata so the site could realistically start ranking for searches like "fish and chips Korsten" from a standing start.
+- **No backend meant no easy way to "harden" the site the usual way.** I treated that as an advantage — a static, form-free, database-free site has no customer data and no login to compromise — and focused security work on response headers (CSP, HSTS, frame and sniffing protections) instead.
+- **Getting from "browsing the menu" to "placing an order" needed to be one tap**, not a form or a cart, matching how the shop actually takes orders. Every call to action goes straight to WhatsApp or a phone call rather than a checkout flow nobody asked for.
+
+## Result
+A live, production site at superfastseaflight.co.za for a real Korsten takeaway, plus a companion 59-second animated video ad for social media, with the full menu, prices and ordering path doing its job on real customers' phones.
+
 ## About this repository
 This is a **showcase repository**. It describes the project; the production source is kept private because it belongs to a client business. © Craig Chadley Johnson. All rights reserved. See [LICENSE](LICENSE).
 
